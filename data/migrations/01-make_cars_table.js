@@ -9,7 +9,7 @@ exports.up = function (knex) {
 
     tbl.string('model', 123).notNullable()
 
-    tbl.numeric('mileage').notNullable()
+    tbl.numeric('mileage').unsigned().notNullable()
 
     tbl.string('title', 123)
 
@@ -20,4 +20,5 @@ exports.up = function (knex) {
 
 exports.down = function (knex) {
   // DO YOUR MAGIC
+  return knex.schema.dropTableIfExists('cars')
 };
