@@ -14,7 +14,6 @@ const cars = [
         model: 'Dark Dragster',
         mileage: 2100,
         title: 'Dark',
-        transmission: 'Hyproded'
     },
     {
         vin: '9344945093449450',
